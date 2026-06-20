@@ -122,9 +122,7 @@ Proyecto funcional desarrollado como prototipo académico para tesis.
 
 Algunas funcionalidades dependen de la configuración correcta de Supabase y de las variables de entorno correspondientes.
 
-Autor
-
-Oscar Daniel Muñoz Castro
+Autores:Oscar Muñoz y Kamila Diaz
 
 Proyecto académico de tesis.
 
