@@ -1,0 +1,1 @@
+DROP POLICY IF EXISTS "usuarios_select_admin_docente" ON public.usuarios;
