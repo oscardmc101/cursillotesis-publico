@@ -1,73 +1,130 @@
-# Welcome to your Lovable project
+# Plataforma estudiantil online para cursillos
 
-## Project info
+Proyecto desarrollado como parte de una tesis académica. La plataforma permite administrar cursillos, cursos, módulos, lecciones, usuarios y contenido educativo en un entorno web.
 
-**URL**: https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID
+El sistema está pensado para instituciones que necesitan organizar materiales de estudio, controlar el acceso de estudiantes y facilitar la gestión académica desde una plataforma centralizada.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## Objetivo del proyecto
 
-**Use Lovable**
+Desarrollar una plataforma web que permita digitalizar parte de la gestión académica de un cursillo, ofreciendo funcionalidades para administración de cursos, contenido educativo y acceso diferenciado según el tipo de usuario.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and start prompting.
+---
 
-Changes made via Lovable will be committed automatically to this repo.
+## Funcionalidades principales
 
-**Use your preferred IDE**
+- Gestión de cursillos.
+- Gestión de cursos por cursillo.
+- Creación de módulos y lecciones.
+- Publicación de contenido educativo.
+- Acceso de estudiantes a cursos habilitados.
+- Validaciones para mostrar contenido según permisos.
+- Administración de usuarios.
+- Integración con Supabase para base de datos y autenticación.
+- Interfaz web responsive.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+---
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+## Tecnologías utilizadas
 
-Follow these steps:
-
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
-
-**Edit a file directly in GitHub**
-
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
-
-**Use GitHub Codespaces**
-
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
-
-## What technologies are used for this project?
-
-This project is built with:
-
-- Vite
-- TypeScript
 - React
-- shadcn-ui
+- TypeScript
+- Vite
 - Tailwind CSS
+- shadcn/ui
+- Supabase
+- PostgreSQL
+- Node.js / npm
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/REPLACE_WITH_PROJECT_ID) and click on Share -> Publish.
+## Estructura general del proyecto
 
-## Can I connect a custom domain to my Lovable project?
+```txt
+public/              Archivos públicos del sitio
+src/                 Código fuente principal
+supabase/            Configuración y archivos relacionados a Supabase
+BD_TESIS/            Archivos o scripts de base de datos utilizados para la tesis
+.env.example         Ejemplo de variables de entorno necesarias
+package.json         Dependencias y scripts del proyecto
+README.md            Documentación del proyecto
 
-Yes, you can!
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+Instalación local
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+Clonar el repositorio:
+
+git clone https://github.com/oscardmc101/cursillotesis-publico.git
+
+Entrar a la carpeta del proyecto:
+
+cd cursillotesis-publico
+
+Instalar dependencias:
+
+npm install
+
+Crear un archivo .env basado en .env.example:
+
+cp .env.example .env
+
+Completar las variables de entorno necesarias para Supabase:
+
+VITE_SUPABASE_URL=
+VITE_SUPABASE_ANON_KEY=
+
+Ejecutar el proyecto en modo desarrollo:
+
+npm run dev
+Variables de entorno
+
+El proyecto requiere variables de entorno para conectarse con Supabase.
+
+Por seguridad, el archivo .env real no está incluido en este repositorio.
+
+Se incluye solamente:
+
+.env.example
+
+Este archivo sirve como referencia para saber qué variables necesita el sistema.
+
+Scripts disponibles
+
+Ejecutar en desarrollo:
+
+npm run dev
+
+Generar versión de producción:
+
+npm run build
+
+Previsualizar build:
+
+npm run preview
+Seguridad y privacidad
+
+Este repositorio es una versión pública preparada para fines académicos.
+
+No se incluyen:
+
+Credenciales reales.
+Archivo .env.
+Claves privadas.
+Tokens de acceso.
+Datos sensibles de usuarios reales.
+
+Las variables de entorno deben ser configuradas manualmente por quien desee ejecutar el proyecto.
+
+Estado del proyecto
+
+Proyecto funcional desarrollado como prototipo académico para tesis.
+
+Algunas funcionalidades dependen de la configuración correcta de Supabase y de las variables de entorno correspondientes.
+
+Autor
+
+Oscar Daniel Muñoz Castro
+
+Proyecto académico de tesis.
+
